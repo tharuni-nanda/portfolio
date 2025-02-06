@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharuni Nanda Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3219f3ecc9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" alt="THARUNI"  class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fullstack Developer</p>
+                <h1>HI, I'm <span>Tharuni</span><br> Nanda From India</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------About--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a motivated and dedicated Computer Science student currently in my 3rd year. I have a 
+                        strong foundation in C and am learning Python. I am developing my problem-solving skills 
+                        in reasoning and aptitude. Additionally, I have basic knowledge of Django and Bootstrap 
+                        frameworks. I am eager to apply my skills in software development, machine learning, and 
+                        backend technologies in a challenging role.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Languages</span><br>C, Python (Learning)</li>
+                                <li><span>Web Technologies</span><br> HTML, CSS, JavaScript</li>
+                                <li><span> Frameworks</span><br>Django, Bootstrap</li>
+                                <li><span>Machine Learning</span><br> Supervised & Unsupervised Learning, Linear &
+                                     Logistic Regression</li>
+                                <li><span>Data Science & Processing</span><br> Pandas, NumPy, Matplotlib</li>
+                                <li><span>Tools & Version Control</span><br>Git, VS Code, Jupyter Notebook</li>
+                                <li><span>Soft Skills</span><br>Communication, Problem-Solving, Teamwork</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Present</span><br>Currently I don't have Industrial Experience.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - 2026</span><br>Bachelor of Technology (B.Tech), 
+                                    Computer Science<br>
+                                    Rajiv Gandhi University of Knowledge Technologies (IIIT-RK Valley)<br>
+                                B-Tech CGPA:7.95</li>
+                                <li><span>January 18, 2020 - 2022</span><br>Pre University Course at <br>Rajiv Gandhi 
+                                    University of Knowledge Technologies (IIIT-RK Valley)<br>
+                                PUC CGPA:8.7</li>
+                                <li><span>2019 - 2020</span><br>ZPHS Kaligiri<br>10th CGPA:10.0</li>
+                                <!--<li><span></span></li>-->
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------services------------------->
+    <!---------------------projects/my work------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Best Care Navigator</h3>
+                        <p>Developed a hospital search and appointment booking system using Python (Django Framework)
+                            with HTML, CSS, and JavaScript for the frontend. Implemented a SQL database for storing and
+                            retrieving hospital and appointment data.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3> Machine Learning Predictions</h3>
+                        <p> Linear & Logistic Regression Models: Implemented models to predict outcomes
+                            based on historical datasets with an accuracy of 87%.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Amazon Frontend Clone</h3>
+                        <p>Developed a Amazon frontend Clone, with Web Technologies HTML, CSS and JavaScript</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------contact-------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="social-icons">
+                        <a href="mailto:tharuninanda@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/tharuni-nanda-0656a2334"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/tharuni-nanda"><i class="fa-brands fa-github"></i></a>
+                        <a href="tel:+916302415766"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                    <a href="images/tharuni-nanda-cv.pdf" download class="btn btn2">Download CV</a>
+
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <!--go to docs.google.com for spredsheet-->
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------copy right-->
+    <div class="copyright">
+        <p>Copyright &copy; Tharuni <i class="fa-solid fa-paw"></i> 2025</p>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemen = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemen.style.right="0";
+        }
+        function closemenu(){
+            sidemen.style.right="-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxXVV-NjPwsVJcVZSa_sbhDjPGPBJbXr3YKl4IzAj1znyV-dwieH514CP5L-X6gkXWZDA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML = "" 
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
